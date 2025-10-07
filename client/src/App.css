@@ -1,0 +1,105 @@
+.app {
+  min-height: 100vh;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  margin: 0;
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+}
+
+.app-header {
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.app-title h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.app-title p {
+  margin: 0.35rem 0 0;
+  color: rgba(248, 250, 252, 0.7);
+  font-size: 0.95rem;
+}
+
+.app-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wallet-chip {
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  background: rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  text-align: right;
+  min-width: 170px;
+}
+
+.wallet-chip span {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(148, 163, 184, 0.7);
+}
+
+.wallet-chip strong {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.share {
+  padding: 0.55rem 1.3rem;
+  border-radius: 999px;
+  border: none;
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.share:hover {
+  background: #0ea5e9;
+}
+
+.app-main {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .app-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .wallet-chip {
+    flex: 1;
+    text-align: left;
+  }
+}
