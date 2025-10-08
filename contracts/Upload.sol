@@ -8,6 +8,7 @@ contract Upload {
      address user; 
      bool access; //true or false
   }
+  
   mapping(address=>string[]) value;
   mapping(address=>mapping(address=>bool)) ownership;
   mapping(address=>Access[]) accessList;
